@@ -1,14 +1,17 @@
 /*General*/
+
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Times New Roman', Times, serif, ;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 body{
     background-color: rgba(1, 153, 241, 0.938);
-    background: linear-gradient(90deg, rgba(1,153,241,0.75) 0%, rgba(24,164,237,0.8183648459383753) 44%, rgba(0,212,255,1) 100%);
-    
+    background: linear-gradient(90deg, rgba(1,153,241,0.75) 0%, rgba(24,164,237,0.8183648459383753) 44%, rgba(0,212,255,1) 100%);   
     min-width: 1024px;
 }
 
@@ -47,13 +50,13 @@ nav div button{
 
 nav div button:hover{
     background-color: cyan;
-    color: black;
-    outline: 2px black solid;
+    color: white;
+    outline: 2px white solid;
 }
 
 nav div p, nav div img {
     cursor: pointer;
-    color: white;
+    color: black;
     font-weight: 400;
     text-decoration: none;
     transition: text-decoration 0.5s, font-weight 0.5s;
@@ -62,8 +65,8 @@ nav div p, nav div img {
 nav div p:hover{
     text-decoration: underline;
     font-weight: 900;
-    color: black;
-    outline: 2px black;
+    color: white;
+    outline: 2px white;
 }
 
 /*section*/
@@ -73,13 +76,10 @@ main{
     margin: 12px 0;
 }
 
-main section{
-    display: flex;
-    justify-content: center;
-    gap: 25px;
+.fila{
     background: rgb(255,255,255);
     background: linear-gradient(142deg, rgba(255,255,255,0.4565475848542542) 0%, rgba(168,173,175,0.6386204139859069) 32%, rgba(255,255,255,0.7758753159466911) 100%);
-    border-radius: 50px;
+    border-radius: 100px;
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
 }
@@ -105,24 +105,19 @@ main section .columna {
     padding: 20px 0;
 }
 
-main section .publicidad {
-    display: flex;
-    width: 48px;
-    height: 70px;
-    gap: 12px;
-    padding: 0 0 0 20px;
-}
 .columna h1{
     font-weight: 900;
     padding: 50px 20px;
+    color: white;
 }
 
 .columna p{
     font-weight: 700;
     padding: 20px 20px;
+    color: white;
 }
 
-.columna button{
+.mas button{
     font-size: 25px;
     background-color: aquamarine;
     font-weight: 900;
@@ -131,10 +126,10 @@ main section .publicidad {
     border-radius: 100px;
     border:none;
     cursor: pointer;
-    transition: background-color 0.5s, color 0.5s, outline 0.5s;
+    transition: background-color 0.5s,color 0.5s,outline 0.5s;
 }
 
-.columna button :hover{
+.mas button:hover{
     background-color: cyan;
     color: white;
     outline: 2px white solid;
@@ -150,4 +145,47 @@ main section .publicidad {
     100%{
         background-position: 0% 50%;
     }
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    color: rgba(107, 107, 107, 0.877);
+    align-items: center;
+    justify-content: center;
+}
+
+.option{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+}
+
+.nueva button{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.cambio button{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
 }
